@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Online Recruit</title>
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <!-- <div id="loader">
+
+        <div class="boxes">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <main class="h-screen">
+        <!-- Header -->
+        <header class="w-full flex h-20 py-5 px-16 justify-between  fixed top-0 items-center z-20 ">
+            <div class="header-logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+
+            <nav>
+                <ul class="hidden lg:flex">
+                    <li class="active"><a class="p-3 mx-4 text-xl font-bold uppercase " href="#">Home</a></li>
+                    <li><a class="p-3 mx-4 text-xl font-bold uppercase" href="#">About</a></li>
+                    <li><a class="p-3 mx-4 text-xl font-bold uppercase" href="#">How it works</a></li>
+                    <li><a class="p-3 mx-4 text-xl font-bold uppercase" href="#">Contact Us</a></li>
+                    <li><a class="p-3 mx-4 text-xl font-bold uppercase btn text-white rounded-md"
+                            href="#">Login/Register</a></li>
+                </ul>
+
+                <i class="fas fa-bars mobile-nav-icon lg:hidden" id="icon" onclick="toggleNavigation()"></i>
+            </nav>
+        </header>
+        <section class="owl-carousel owl-theme hero overflow-hidden my-20 text-white">
+            <div class="slide slide1 relative flex justify-between items-center">
+                <div class="hero-text">
+                    <h1>Revolutionise your digital world</h1>
+                    <p>We design, build and launch websites and products that are simple, beautiful and helps businesses
+                        grow</p>
+                    <button><a href="#" class="btn p-4 mt-8 rounded-md"> Get a quote</a></button>
+                </div>
+            </div>
+            <div class="slide slide2 relative flex justify-between items-center">
+                <div class="hero-text">
+                    <h1>Page 2</h1>
+                    <p>We design, build and launch websites and products that are simple, beautiful and helps businesses
+                        grow</p>
+                    <button><a href="#" class="btn p-4 mt-8 rounded-md"> Get a quote</a></button>
+                </div>
+            </div>
+            <div class="slide slide3 relative flex justify-between items-center">
+                <div class="hero-text">
+                    <h1>Page 3</h1>
+                    <p>We design, build and launch websites and products that are simple, beautiful and helps businesses
+                        grow</p>
+                    <button><a href="#" class="btn p-4 mt-8 rounded-md"> Get a quote</a></button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- Mobile Nav -->
+
+    <nav class="mobile-nav p-5 pl-8" id="mobile-nav">
+        <ul>
+            <li class="py-5 text-xl cursor-pointer">Home</li>
+            <hr>
+            <li class="py-5 text-xl cursor-pointer"><a href="about-us.html">About Us</a></li>
+            <hr>
+            <li class="py-5 text-xl cursor-pointer"><a href="how-it-works.html">How it works</a></li>
+            <hr>
+            <li class="py-5 text-xl cursor-pointer"><a href="contact-us.html">Contact Us</a></li>
+            <hr>
+            <li class="py-5 text-xl cursor-pointer">Login / Register</li>
+        </ul>
+
+    </nav>
+
+    <!-- Stats block -->
+    <section class="stats leading-loose">
+        <h1 class="text-center mb-10 font-semibold text-4xl">
+            We are growing, building <br> partnerships, and changing lives
+            <div class="flex-col  justify-center items-center leading-loose md:justify-around items-start mt-10 p-6 flex-wrap w-full">
+                <div class="stats1 shadow-2xl p-8 my-10 w-full mx-auto md:flex flex-col w-2/6">
+                    <span class="text-6xl font-bold">3</span>
+                    <p class="text-xl mt-5 font-medium"> offices in Lagos, London, Kigali, & expanding</p>
+
+
+
+                </div>
+                <div class="stats2 shadow-2xl p-8 my-10 w-full mx-auto md:flex flex-col w-2/6">
+                    <span class="text-6xl font-bold">1000+</span>
+                    <p class="text-xl mt-5 font-medium">nurses believe in our mission</p>
+                </div>
+                <div class="stats3 shadow-2xl p-8 my-10 w-full mx-auto md:flex flex-col w-2/6">
+                    <span class="text-6xl font-bold">20000+</span>
+                    <p class="text-xl mt-5 font-medium">hours in combined team experience connecting African nurses with
+                        opportunities home and abroad</p>
+
+                </div>
+            </div>
+        </h1>
+    </section>
+
+    <section id="apply">
+        <div class="text-center flex  flex-col-reverse md:flex flex-row justify-between items-center w-full">
+            <div class="application-text shadow-2xl p-10 w-full md:w-7/12 leading-loose">
+                <h1 class="text-2xl md:text-2xl font-semibold md:text-5xl">
+                    Get matched to top employers based on your skills
+                </h1>
+                <p class="text-xl py-10">On Cooperativerecruit, employers are hiring nurses just like you. Complete
+                    your profile, get vetted
+                    and apply for your next role.
+                </p>
+                <button><a href="#" class="btn-transparent bg-transparent py-3 px-10 mt-10 text-xl ">Apply</a></button>
+
+            </div>
+
+            <div class="application-img w-4/12">
+                <img src="img/nurse-globe.png" alt="">
+            </div>
+        </div>
+
+
+        <div
+            class="text-center flex flex-col flex-col-reverse md:my-10 py-10 flex flex-row-reverse justify-between items-center w-full">
+            <div class="application-text shadow-2xl p-10 w-full md:w-7/12 p-5">
+                <h1 class="text-2xl md:text-5xl font-semibold">
+                    Get free English lessons
+                </h1>
+                <p class="text-xl py-10">On Cooperativerecruit, employers are hiring nurses just like you. Complete your
+                    profile, get vetted and apply for your next role.</p>
+                <button><a href="#" class="btn-transparent bg-transparent py-3 px-10  mt-10 text-xl">Apply</a></button>
+            </div>
+
+            <div class="application-img w-full md:w-4/12">
+                <img src="img/lessons.png" alt="">
+            </div>
+        </div>
+
+
+        <div
+            class="text-center flex-col flex-col-reverse md:my-10 py-10 flex flex-row justify-between items-center w-full">
+            <div class="application-text shadow-2xl p-10 w-full md:w-7/12">
+                <h1 class="text-2xl md:text-5xl font-semibold">
+                    Dedicated Customer Service
+                </h1>
+                <p class="text-xl py-10">
+                    On Cooperativerecruit, employers are hiring nurses just like you. Complete your profile, get vetted
+                    and apply for your next role.
+                </p>
+                <button><a href="#" class="btn-transparent  bg-transparent py-3 px-10 mt-10 text-xl">Apply</a></button>
+            </div>
+
+            <div class="application-img w-4/12">
+                <img src="img/customer-service.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="nurses-section w-full">
+        <div class="nurses-section-header">
+            <h1 class="text-center text-4xl font-normal">
+                See why nurses love <span class="blue font-semibold">Cooperative</span> Recruit
+            </h1>
+            <p class="text-center my-10 pb-10 text-xl">
+                Our easy-to-use solutions connect highly skilled African nurses with free <br> and impactful
+                opportunities
+                around the world.
+            </p>
+        </div>
+
+        <div class="w-full flex-col md:flex flex-row justify-between w-full">
+            <div class="nurse1 w-full md:flex flex-col shadow-2xl w-4/12 rounded-md pb-10">
+                <img src="img/test1.png" alt="">
+                <p class="py-5 px-7 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dicta, esse debitis et ipsa assumenda
+                    hic facere fugiat voluptate sint?
+                </p>
+
+                <strong class="block text-center">
+                    Dora Doe
+                    <br>
+                    Birmingham, UK
+                </strong>
+            </div>
+            <div class="nurse1 w-full md:flex flex-col shadow-2xl w-4/12 mx-12 pb-10 rounded-md">
+                <img src="img/test2.png" alt="">
+                <p class="py-5 px-7 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dicta, esse debitis et ipsa assumenda
+                    hic facere fugiat voluptate sint?
+                </p>
+                <strong class="block text-center">
+                    Rejoice Eze
+                    <br>
+                    Manchester, UK
+                </strong>
+            </div>
+            <div class="nurse2 w-full md:flex flex-col shadow-2xl w-4/12 pb-10 rounded-md">
+                <img src="img/test3.png" alt="">
+                <p class="py-5 px-7 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dicta, esse debitis et ipsa assumenda
+                    hic facere fugiat voluptate sint?
+                </p>
+                <strong class="block text-center">
+                    Prince Effiong
+                    <br>
+                    Merseyside, UK
+                </strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equal Opportunities -->
+    <section id="equal-opportunities" class="w-full">
+        <div class="opportunities-wrap md:flex justify-around items-center">
+            <div class="opportunity-img hidden md:w-3/6 px-10">
+                <img class="scale-90" src="img/bigman.png" alt="">
+            </div>
+            <div class="w-full md:w-4/6">
+                <h1 class="text-2xl text-center md:text-4xl leading-relaxed font-semibold">Free and equal opportunites
+                    for <br> everyone</h1>
+                <p class="text-center md:text-xl mt-10 leading-relaxed"> On Cooperativerecruit, companies are hiring
+                    Nurses just like you. Complete your profile, get
+                    vetted and
+                    start applying for your next role.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find a Job -->
+    <section id="find-job">
+        <div class="flex flex-col items-center text-center justify-center">
+            <h1 class="text-4xl font-semibold blue">Find a new job today </h1>
+            <p class="text-xl my-10">Take advantage of our easy-to-use solutions and connect with free <br> and
+                impactful opportunities around the world.</p>
+
+            <button><a href="#" class="btn-transparent bg-transparent py-3 px-10 mt-10 text-xl ">View Jobs</a></button>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full p-20 mb-0 leading-loose>
+ <div class=" four-col-grid grid grid grid-cols-4 gap-x-8 item-start md:grid-cols-1 gap-x-0 gap-y-5 max-w-xl
+        sm:max-w-full">
+        <div class="col1 p-0 md:p-4 ">
+            <h2 class="blue text-2xl font-semibold">About Us</h2>
+            <p class="mt-6">
+                Cooperative recruit is a socially responsible recruitment company committed to rewarding value and
+                elevating healthcare for everyone. Create a profile and discover previously hidden opportunities and
+                talents
+
+
+            </p>
+        </div>
+        <div class="col2">
+            <h2 class="blue text-2xl font-semibold">Forum</h2>
+            <ul>
+                <li><a href="#">Our blog</a></li>
+                <li><a href="#">Free courses</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col3">
+            <h2 class="blue text-2xl font-semibold">For Candidates</h2>
+            <ul>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">My account</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+        <div class="col4">
+            <h2 class="blue text-2xl font-semibold">Sign Up for our Newsletter</h2>
+            <p class="my-6">
+                Sign up for our newsletter to get the latest updates and offers delivered directly to your inbox
+            </p>
+            <div class="subscribe flex">
+                <input class="p-2 focus:outline-none" type="email" placeholder="Enter your Email">
+                <button><a class="btn px-2" href="#"><i class="fas fa-paper-plane"></i> Subscribe</a></button>
+            </div>
+        </div>
+     </div>
+
+    
+    </footer>
+    <!-- Javascript links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
